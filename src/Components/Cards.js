@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 
 //follows the structure of App.js
-class Projects extends Component {
+class Cards extends Component {
   render() {
     return (
-      <div className="Projects"> 
-            My Projects
-            {this.props.test}
+      <div className="Cards"> 
+            My Cards
+            {this.props.name}
       </div>
     );
   }
 }
 
 //So we can use it in other files
-export default Projects;
+export default Cards;
