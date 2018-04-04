@@ -8,46 +8,59 @@ class App extends Component {
     super();
     //we want to take this state and pass through <cards /> 
     //as a property
-    this.state = {
+    this.state = { //1. setting our state
       cards: [
         {
-          name:'K'
+          name:'K',
+          suit:'hearts'
         },
         {
-          name:'Q'
+          name:'Q',
+          suit:'hearts'
         },
         {
-          name:'J'
+          name:'J',
+          suit:'hearts'
         },
         {
-          name:'10'
+          name:'10',
+          suit:'hearts'
         },
         {
-          name:'9'
+          name:'9',
+          suit:'hearts'
         },
         {
-          name:'8'
+          name:'8',
+          suit:'hearts'
         },
         {
-          name:'7'
+          name:'7',
+          suit:'hearts'
         },
         {
-          name:'6'
+          name:'6',
+          suit:'hearts'
         },
         {
-          name:'5'
+          name:'5',
+          suit:'hearts'
         },
         {
-          name:'4'
+          name:'4',
+          suit:'hearts'
         },
         {
-          name:'3'
+          name:'3',
+          suit:'hearts'
         },
         {
-          name:'2'
+          name:'2',
+          suit:'hearts'
         },
         {
-          name:'A'
+          name:'A',
+          suit:'hearts'
         }
       ]
     }
@@ -56,8 +69,9 @@ class App extends Component {
     return (
       // can only have one div at the very top level
       <div className="App"> 
-        My app
-        <Cards name = " Hello World "/>      
+        My CARDS
+        {/* 2. passing it through to cards as a property */}
+        <Cards cards = {this.state.cards}/>      
       </div>
     );
   }
