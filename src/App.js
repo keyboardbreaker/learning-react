@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css'; //this is only needed in App.js
-import Cards from './Components/Cards'
+import Cards from './Components/Cards';
+import StyledDiv from './StyledDiv.js';
 
 class App extends Component {
   constructor(){
@@ -64,7 +65,8 @@ class App extends Component {
         }
       ]
     }
-  }
+  } 
+
   render() {
     return (
       // can only have one div at the very top level
@@ -72,6 +74,7 @@ class App extends Component {
         My CARDS
         {/* 2. passing it through to cards as a property */}
         <Cards cards = {this.state.cards}/>      
+        <StyledDiv />
       </div>
     );
   }
